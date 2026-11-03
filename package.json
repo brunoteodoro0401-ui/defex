@@ -1,7 +1,8 @@
 {
-  "name": "teodorotech-saqm",
+  "name": "defex",
   "private": true,
   "version": "2.0.0",
+  "description": "Defex — Plataforma de Qualidade e Devoluções",
   "type": "module",
   "scripts": {
     "dev": "vite",

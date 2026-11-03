@@ -73,7 +73,7 @@ export function Sidebar({
 
   return (
     <aside className="w-64 min-h-screen flex flex-col bg-white dark:bg-[#0d121f] text-slate-700 dark:text-slate-300 border-r border-slate-200/80 dark:border-slate-800/80 shrink-0 transition-colors duration-200">
-      {/* Topo / Logo TeodoroTech */}
+      {/* Topo / Logo Defex */}
       <div className="px-5 py-5 border-b border-slate-100 dark:border-slate-800/60">
         <div className="flex items-center gap-3">
           <div className="w-9 h-9 rounded-xl bg-gradient-to-tr from-brand-600 to-indigo-500 flex items-center justify-center shadow-md shadow-brand-500/20 text-white">
@@ -81,12 +81,12 @@ export function Sidebar({
           </div>
           <div>
             <div className="flex items-center gap-1.5">
-              <span className="text-base font-extrabold text-slate-900 dark:text-white tracking-tight">TeodoroTech</span>
+              <span className="text-base font-extrabold text-slate-900 dark:text-white tracking-tight">Defex</span>
               <span className="px-1.5 py-0.5 rounded text-[10px] font-semibold bg-brand-50 text-brand-700 dark:bg-brand-950/60 dark:text-brand-300 border border-brand-200/60 dark:border-brand-800/60">
-                SAQM
+                PRO
               </span>
             </div>
-            <p className="text-[11px] text-slate-400 font-medium">Analytics & Qualidade</p>
+            <p className="text-[11px] text-slate-400 font-medium">Qualidade & Devoluções</p>
           </div>
         </div>
       </div>
@@ -214,7 +214,7 @@ export function Sidebar({
 
       {/* Assinatura Discreta */}
       <div className="px-4 py-2.5 border-t border-slate-100 dark:border-slate-800/60 flex items-center justify-between text-[10px] text-slate-400 dark:text-slate-500 select-none">
-        <span>SAQM Pro v2.0</span>
+        <span>Defex Pro v2.0</span>
         <span className="tracking-wide">
           por <span className="font-semibold text-slate-500 dark:text-slate-400">TeodoroTech</span>
         </span>

@@ -1,24 +1,43 @@
-# 🚀 TeodoroTech — SAQM Pro (Portfólio & SaaS Edition)
+# 🚀 Defex — Plataforma de Qualidade e Devoluções
 
-Versão **100% independente e desacoplada** do **SAQM (Sistema de Análise de Qualidade de Manutenção)** desenvolvida pela **TeodoroTech** para demonstração comercial, portfólio e implantação White-Label em assistências técnicas e operações de e-commerce de smartphones.
+> **Defex** é uma plataforma analítica desenvolvida pela **TeodoroTech** voltada para e-commerces e assistências técnicas de eletrônicos e smartphones seminovos e recondicionados. O sistema transforma planilhas operacionais em dashboards executivos em tempo real, auditando devoluções por canal (Mercado Livre, Shopee, Site) e rastreando reincidência de aparelhos por IMEI.
 
-## ✨ Diferenciais desta Versão
+---
 
-- **Zero dependência do banco da empresa anterior:** Nenhum dado real de clientes, IMEIs ou credenciais da operação antiga está presente.
-- **Base de Demonstração Realista Integrada:** Já abre com **585 registros fictícios** (280 triagens de entrada, 195 reparos de bancada com casos de reincidência e 110 devoluções de Mercado Livre, Site Oficial e Shopee).
-- **Upload de Planilhas `.xlsx` / `.xls` 100% no Navegador:** Qualquer visitante ou cliente em potencial pode arrastar uma planilha Excel para testar os gráficos e filtros em tempo real — tudo processado localmente via `SheetJS` sem enviar dados para servidores externos.
-- **Gerador de Planilha Modelo (`.xlsx`):** Botão na barra lateral para baixar uma planilha `.xlsx` já formatada com as 3 abas (`Triagem Recebimentos`, `Reparos Técnicos` e `Devolução`) pronta para edição e teste.
-- **Botão "Voltar aos Dados Demo":** Permite restaurar a base fictícia original com 1 clique após testar uma planilha personalizada.
+## ✨ Principais Funcionalidades
 
-## 🛠️ Como Executar Localmente
+- **Raio-X de Devoluções por Canal:** visualização rápida do volume de devoluções no Mercado Livre, Site e Shopee com drill-down para lista detalhada.
+- **Classificação Inteligente de Motivos (NLP):** o sistema lê automaticamente o relato aberto do cliente e categoriza entre *Tela/Touch*, *Bateria/Energia*, *Arrependimento* e *Defeitos Gerais*.
+- **Radar de Auditoria de IMEIs:** alerta em tempo real de aparelhos com múltiplos reparos ou que sofreram devolução pós-manutenção.
+- **Motor DataGrid Avançado:** busca multi-termo, filtros em cascata por coluna no estilo Excel, paginação e exportação em `.csv`.
+- **Arquitetura 100% Client-Side:** processamento e parsing de planilhas `.xlsx` em memória direto no navegador (via SheetJS), sem dependência de banco de dados externo ou riscos de vazamento de dados.
+- **Base de Demonstração Integrada:** abre automaticamente com mais de 580 registros fictícios e permite baixar uma planilha modelo com 1 clique para testes.
+
+---
+
+## 🛠️ Stack Tecnológica
+
+- **Front-end:** React 18, TypeScript, Tailwind CSS
+- **Bundler:** Vite
+- **Visualização de Dados:** Recharts
+- **Parsing de Planilhas:** SheetJS (xlsx)
+- **Ícones:** Lucide React
+
+---
+
+## 💻 Executando o Projeto
 
 ```bash
+# Instalar dependências
 npm install
+
+# Iniciar servidor local
 npm run dev
-```
 
-Para gerar o pacote de produção (`dist/`):
-
-```bash
+# Gerar build de produção
 npm run build
 ```
+
+---
+
+Desenvolvido por **TeodoroTech**.

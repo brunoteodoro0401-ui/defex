@@ -1,5 +1,5 @@
 // ============================================================
-// TeodoroTech — SAQM Pro (Portfólio & SaaS Demo Engine)
+// Defex — Plataforma de Qualidade e Devoluções
 // Motor 100% local no navegador:
 // - Gera base de demonstração realista e anonimizada (sem dados reais)
 // - Processa upload de planilhas .xlsx/.xls direto no browser via SheetJS
@@ -24,8 +24,8 @@ export interface StoredDataset {
   devolucoes:   Devolucao[];
 }
 
-const STORAGE_KEY = 'teodorotech-saqm:dataset-v1';
-const UPDATE_EVENT = 'teodorotech-saqm-data-changed';
+const STORAGE_KEY = 'defex:dataset-v1';
+const UPDATE_EVENT = 'defex-data-changed';
 
 // ── Gerador determinístico para dados de demonstração ─────
 function createRng(seed = 20261102) {
@@ -465,5 +465,5 @@ export function downloadSampleSpreadsheet(): void {
   XLSX.utils.book_append_sheet(wb, XLSX.utils.json_to_sheet(tecSheetData), 'Reparos Técnicos');
   XLSX.utils.book_append_sheet(wb, XLSX.utils.json_to_sheet(devSheetData), 'Devolução');
 
-  XLSX.writeFile(wb, 'Planilha_Modelo_SAQM_TeodoroTech.xlsx');
+  XLSX.writeFile(wb, 'Planilha_Modelo_Defex.xlsx');
 }

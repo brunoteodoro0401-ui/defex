@@ -21,7 +21,7 @@ interface LayoutProps {
 }
 
 const PAGE_TITLES: Record<string, string> = {
-  '/':             'Dashboard de Qualidade — TeodoroTech',
+  '/':             'Defex — Painel Executivo de Qualidade',
   '/tecnicos':     'Reparo dos Técnicos',
   '/recebimentos': 'Triagem Recebimentos',
   '/devolucoes':   'Devoluções de Clientes',
@@ -45,7 +45,7 @@ export function Layout({
   const canalParam     = searchParams.get('canal');
   const categoriaParam = searchParams.get('categoria');
 
-  let title = PAGE_TITLES[location.pathname] ?? 'TeodoroTech SAQM';
+  let title = PAGE_TITLES[location.pathname] ?? 'Defex — Plataforma de Qualidade e Devoluções';
   if (location.pathname === '/devolucoes') {
     if (canalParam) {
       title = `Devoluções — Canal: ${canalParam}`;
@@ -102,9 +102,9 @@ export function Layout({
         <main ref={mainRef} className="flex-1 overflow-y-auto px-7 py-7 flex flex-col justify-between">
           <div className="flex-1">{children}</div>
           <footer className="mt-10 pt-4 border-t border-slate-200/50 dark:border-slate-800/50 flex flex-col sm:flex-row items-center justify-between gap-2 text-[11px] text-slate-400 dark:text-slate-500 select-none">
-            <span>SAQM Pro — Plataforma de Inteligência e Qualidade em Assistência Técnica</span>
+            <span>Defex — Plataforma de Inteligência de Qualidade e Devoluções</span>
             <span>
-              Produto Oficial <strong className="font-semibold text-brand-600 dark:text-brand-400">TeodoroTech</strong>
+              Desenvolvido por <strong className="font-semibold text-brand-600 dark:text-brand-400">TeodoroTech</strong>
             </span>
           </footer>
         </main>
